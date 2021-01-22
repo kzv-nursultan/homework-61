@@ -1,0 +1,11 @@
+.Country-info {
+    position: fixed;
+    margin: 0 auto;
+    left: 15%;
+    right: 0;
+    width:300px;
+}
+
+img {
+    width:50%;
+}

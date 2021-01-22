@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import CountryNames from '../../components/CountryNames/CountryNames';
 import CountryHandler from '../CountryHandler/CountryHandler';
+import './MainPage.css';
 
 const MAIN_URL = 'all?fields=name;alpha3Code';
 
@@ -19,7 +20,7 @@ const MainPage = () => {
 
     return (
         <div className="d-flex position-relative">
-            <div className="border border-danger">
+            <div className="ml-4 border border-danger">
                 <ol className="table-hover">
                     {countries.map(country=>(
                     <CountryNames 
@@ -30,7 +31,7 @@ const MainPage = () => {
                      ))}
                 </ol>
             </div>
-            <div className="position-fixed">
+            <div className="Country-info">
                 <CountryHandler
                 countryCode={countryCode}/>
             </div>
